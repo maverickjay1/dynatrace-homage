@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "BerninaSans";
+  src: url(./BerninaSans-Web-Extrabold.woff) format("woff"), url(./BerninaSans-Web-Light.woff) format("woff"), url(./BerninaSans-Web-Regular.woff) format("woff"), url(./BerninaSans-Web-Semibold.woff) format("woff");
+}
+body {
+  font-family: "BerninaSans";
+}
+
+img {
+  width: 150px;
+}/*# sourceMappingURL=general.css.map */
