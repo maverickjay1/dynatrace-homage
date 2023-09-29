@@ -6,11 +6,11 @@
     url(./BerninaSans-Web-Semibold.woff) format("woff");
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  //   box-sizing: border-box;
-}
+// * {
+//   margin: 0;
+//   padding: 0;
+//   //   box-sizing: border-box;
+// }
 body {
   font-family: "BerninaSans";
 }
@@ -22,7 +22,6 @@ header {
   display: flex;
   justify-content: space-between;
   // background-color: red;
-  // align-items: flex-start;
 }
 
 .dynatrace-logo img {
@@ -58,18 +57,47 @@ header {
   }
 }
 
+.menu.item {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+// .menu.item > a {
+// }
+
 ul {
   margin-block-end: 0em;
   margin-block-start: 0em;
 }
 
+.menu-item > a {
+  cursor: pointer;
+}
+// .menu-item:hover > .sub-menu, /*this one works, but focus doesn't!*/
+.menu-item:focus-within > .sub-menu {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
 .menu {
   position: absolute;
   display: none;
-  right: 20px;
+  right: 0px;
   background-color: white;
 }
 
+.sub-menu {
+  display: none;
+}
+
 .top-section {
+  width: 100%;
+  height: 10;
+  position: relative;
   background-image: url(./Images/home-hero-large.webp);
 }
