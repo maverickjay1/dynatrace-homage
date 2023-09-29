@@ -2,10 +2,64 @@
   font-family: "BerninaSans";
   src: url(./BerninaSans-Web-Extrabold.woff) format("woff"), url(./BerninaSans-Web-Light.woff) format("woff"), url(./BerninaSans-Web-Regular.woff) format("woff"), url(./BerninaSans-Web-Semibold.woff) format("woff");
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "BerninaSans";
 }
 
 img {
   width: 150px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dynatrace-logo img {
+  width: 150px;
+}
+
+.dynatrace-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  position: relative;
+}
+.burger-menu:focus-within + .menu {
+  display: block;
+}
+.burger-menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.burger-menu li svg {
+  transform: scale(0.5);
+}
+
+ul {
+  margin-block-end: 0em;
+  margin-block-start: 0em;
+}
+
+.menu {
+  position: absolute;
+  display: none;
+  right: 20px;
+  background-color: white;
+}
+
+.top-section {
+  background-image: url(./Images/home-hero-large.webp);
 }/*# sourceMappingURL=general.css.map */

@@ -9,21 +9,19 @@
 
   <body>
     <header>
-      <img src="./Images/Dynatrace-Logo.jpg" alt="Dynatrace Logo" />
-      <img src="./Images/home-hero-large.webp" alt="Header Background" />
+      <div class="dynatrace-logo">
+        <img src="./Images/Dynatrace-Logo.jpg" alt="Dynatrace Logo" />
+      </div>
       <div class="Header-Menu">
         <nav>
-          <ul>
-            <li>
-              <a href="#">
-                <svg viewBox="0 0 100 80" width="40" height="40">
+          <ul><div class="burger-menu">
+            <li tabindex="0"> <svg width="43" height="43">
                   <rect width="43" height="5"></rect>
                   <rect y="14" width="43" height="5"></rect>
                   <rect y="28" width="43" height="5"></rect>
                 </svg>
-              </a>
-              <ul>
-                <li>
+              </div>
+              <ul class="menu">
                   <a href="#">Platform</a>
                   <ul>
                     <div class="sub-menu-overview">
@@ -584,6 +582,7 @@
     </header>
     <main>
       <section class="top-section">
+        <!-- <img src="./Images/home-hero-large.webp" alt="Header Background" /> -->
         <h1>Unified observability and security</h1>
         <h2>
           Simplify cloud complexity and innovate faster and more securely with
