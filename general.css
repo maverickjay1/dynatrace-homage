@@ -3,6 +3,8 @@
   src: url(./BerninaSans-Web-Extrabold.woff) format("woff"), url(./BerninaSans-Web-Light.woff) format("woff"), url(./BerninaSans-Web-Regular.woff) format("woff"), url(./BerninaSans-Web-Semibold.woff) format("woff");
 }
 body {
+  margin: 0;
+  padding: 0;
   font-family: "BerninaSans";
 }
 
@@ -11,77 +13,200 @@ img {
 }
 
 header {
+  position: relative;
+  margin: 0;
   display: flex;
   justify-content: space-between;
 }
-
-.dynatrace-logo img {
-  width: 150px;
+header > img {
+  width: 23%;
+  align-self: center;
+  margin-left: 4%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
-
-.dynatrace-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.burger-menu {
-  display: flex;
-  justify-content: center;
+header .burger-menu {
+  display: inline-block;
   list-style: none;
   position: relative;
 }
-.burger-menu:focus-within + .menu {
+header .burger-menu:focus-within + .menu {
   display: block;
 }
-.burger-menu li {
+header .burger-menu li {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.burger-menu li svg {
+header .burger-menu li svg {
   transform: scale(0.5);
+  align-items: center;
 }
-
-.menu.item {
+header .menu.item {
   position: relative;
   cursor: pointer;
   width: 100%;
   height: 100%;
   list-style: none;
 }
-
-ul {
+header ul {
   margin-block-end: 0em;
   margin-block-start: 0em;
 }
-
-.menu-item > a {
+header .menu-item > a {
   cursor: pointer;
 }
-
-.menu-item:focus-within > .sub-menu {
+header .menu-item:focus-within > .sub-menu {
   display: block;
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 100;
+  z-index: 10;
 }
-
-.menu {
+header .menu {
   position: absolute;
   display: none;
   right: 0px;
   background-color: white;
+  z-index: 10;
 }
-
-.sub-menu {
+header .sub-menu {
   display: none;
 }
 
-.top-section {
-  width: 100%;
-  height: 10;
+/*End of Menu section. Below begins the Body.*/
+.section1 {
   position: relative;
-  background-image: url(./Images/home-hero-large.webp);
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+}
+.section1 .background {
+  width: 100%;
+  height: 880px;
+  display: block;
+}
+.section1 h1 {
+  position: absolute;
+  margin-left: 15px;
+  top: 0;
+  width: 85%;
+}
+.section1 h2 {
+  position: absolute;
+  margin-left: 15px;
+  top: 6%;
+  width: 90%;
+}
+.section1 .link1 {
+  position: absolute;
+  top: 26%;
+  left: 5%;
+}
+.section1 .link2 {
+  position: absolute;
+  top: 26%;
+  left: 25%;
+}
+.section1 .dashboard {
+  position: absolute;
+  align-self: center;
+  width: 95%;
+  top: 38%;
+}
+
+.section2 {
+  position: relative;
+  margin-top: 20px;
+}
+.section2 .background {
+  width: 100%;
+  height: 160px;
+  display: block;
+}
+.section2 .logo {
+  position: absolute;
+  width: 100px;
+  top: 10%;
+  left: 4%;
+  z-index: 1;
+}
+.section2 p {
+  position: absolute;
+  width: 85%;
+  top: 30%;
+  left: 4%;
+}
+.section2 .link {
+  position: absolute;
+  top: 72%;
+  left: 4%;
+}
+
+.section3 {
+  position: relative;
+  margin-top: 110px;
+  margin-bottom: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section3 h2 {
+  width: 70%;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.section3 img {
+  width: 16%;
+  margin-bottom: 36px;
+}
+.section3 img:nth-child(2) {
+  width: 14%;
+}
+.section3 img:nth-child(3) {
+  width: 24%;
+}
+.section3 img:nth-child(4) {
+  width: 8.5%;
+}
+.section3 img:nth-child(5) {
+  width: 22%;
+}
+.section3 img:nth-child(6) {
+  width: 17%;
+}
+.section3 img:nth-child(7) {
+  width: 15%;
+  margin-bottom: 45px;
+}
+
+.section4 {
+  position: relative;
+  margin-top: 230px;
+  margin-bottom: 220px;
+  display: flex;
+  flex-direction: column;
+}
+.section4 .overview {
+  text-align: center;
+  padding-bottom: 16px;
+  margin-left: 2%;
+}
+.section4 .overview h2 {
+  width: 90%;
+  margin: 0 auto;
+}
+.section4 ul {
+  list-style: none;
+  justify-content: flex-start;
+  width: 90%;
+  padding: 0;
+  margin-left: 4%;
+}
+.section4 ul li {
+  margin-bottom: 50px;
+}
+
+.section5 {
+  position: relative;
 }/*# sourceMappingURL=general.css.map */
