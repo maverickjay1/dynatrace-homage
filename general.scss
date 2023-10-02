@@ -25,10 +25,13 @@ img {
 }
 
 header {
-  position: relative;
+  position: fixed;
   margin: 0;
   display: flex;
   justify-content: space-between;
+  z-index: 100;
+  transition: purple 0.3s ease;
+  background-color: white;
 
   > img {
     width: 23%;
@@ -55,6 +58,10 @@ header {
         align-items: center;
       }
     }
+  }
+
+  #header.is.scrolling {
+    background-color: white;
   }
 
   .menu.item {
@@ -106,26 +113,50 @@ header {
   display: flex;
   flex-direction: column;
   height: fit-content;
+  color: white;
 
   h1 {
     margin-left: 3%;
-    margin-top: 19%;
+    margin-top: 26%;
     width: 85%;
+    font-size: 32px;
   }
 
   h2 {
     margin-left: 3%;
     width: 90%;
+    font-size: 22px;
+    font-weight: 100;
   }
 
+  .links {
+    margin-top: 3%;
+    margin-bottom: 2%;
+  }
   .link1 {
     display: inline-block;
     margin-left: 6%;
+    color: black;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 6px;
+    padding: 2% 4%;
+    background-color: white;
+    text-decoration: none; /*removing hyperlink underline*/
+    font-weight: lighter;
   }
 
   .link2 {
     display: inline-block;
-    margin-left: 10%;
+    margin-left: 4%;
+    color: white;
+    text-decoration: none;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 6px;
+    padding: 2% 4%;
   }
 
   .dashboard {
@@ -139,6 +170,7 @@ header {
 .section2 {
   background-image: url(./Images/Gartner-Background-Wave.jpg.webp);
   background-size: cover;
+  height: 165px;
   background-position: center center;
   background-repeat: no-repeat;
   margin-top: 10%;
@@ -152,11 +184,14 @@ header {
   p {
     width: 85%;
     margin-left: 3%;
+    color: white;
+    font-size: 17px;
   }
 
   .link {
     margin-left: 3%;
     margin-bottom: 20px;
+    color: white;
   }
 }
 .section3 {
@@ -200,6 +235,16 @@ header {
   img:nth-child(7) {
     width: 15%;
     margin-bottom: 45px;
+  }
+
+  .link {
+    color: black;
+    text-decoration: none;
+    border-color: black;
+    border-style: solid;
+    border-radius: 6px;
+    border-width: 2px;
+    padding: 2% 4%;
   }
 }
 
